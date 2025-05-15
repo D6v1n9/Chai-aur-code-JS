@@ -58,3 +58,8 @@ console.log(typeof myFunction);  // Function
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//datatypes are based on memory allocation
+// Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+// Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
