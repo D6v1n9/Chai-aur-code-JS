@@ -52,7 +52,7 @@ users[1].email
 // console.log(tinderUser);
 
 // console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
+// console.log(Object.values(tinderUser));            // They give the ouput in array format so you can use Array.from()
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
