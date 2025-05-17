@@ -14,7 +14,7 @@ const user = {
 // user.welcomeMessage()
 
 // console.log(this);            // Inside node this refer to Empty object {} 
-                                // whereas in Browser it refer to Window functions like onclick, alert etc...
+                                // whereas in Browser it refer to Window object like onclick, alert etc...
 
 // function chai(){
 //     let username = "hitesh"
