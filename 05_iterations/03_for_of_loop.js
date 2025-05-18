@@ -1,4 +1,4 @@
-// for of
+// for of :- used for array, map
 
 // ["", "", ""]
 // [{}, {}, {}]
