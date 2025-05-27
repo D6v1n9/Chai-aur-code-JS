@@ -1,0 +1,35 @@
+//Ajax javascript
+//Ajax, short for Asynchronous JavaScript and XML, is a set of web development techniques that use various web technologies on the client-side to create asynchronous web applications
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+  <h1>XMLHttpRequest: readyState property</h1>
+  0	UNSENT	Client has been created. open() not called yet.
+  1	OPENED	open() has been called.
+  2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+  3	LOADING	Downloading; responseText holds partial data.
+  4	DONE	The operation is complete.
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    //open(method, url, async, user, password) :- Refern mdn
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){        //Every time as the state changes the function executes
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+    xhr.send();
+</script>
+</html>
+
+//Assignment : https://chatgpt.com/share/683596d0-5a9c-8007-be9b-90f9a9b57872
