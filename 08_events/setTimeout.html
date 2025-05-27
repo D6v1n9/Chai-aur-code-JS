@@ -16,8 +16,13 @@
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
-
+    
+    //The setTimeout() function in JavaScript is used to execute a piece of code after a specified delay
+    
     const changeMe = setTimeout(changeText, 2000)
+
+    //In JavaScript, clearTimeout() is a method used to cancel a previously scheduled setTimeout() function before it runs.
+    //It takes the timeout ID, which is returned by the setTimeout() function, as its argument and cancels its execution.
 
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
