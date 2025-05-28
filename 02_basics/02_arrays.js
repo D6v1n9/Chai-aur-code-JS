@@ -30,7 +30,7 @@ console.log(Array.from({name: "hitesh"})) // interesting
 ✅ How to correct it?
 Option 1: Convert object values to an array
 If you want the values (["hitesh"]):
-console.log(Array.from(Object.values({ name: "hitesh" }))); 
+console.log(Array.from(Object.values({ name: "hitesh" })));           //Not compulsory to use Array.from() using only Object.values will also give the array
 // Output: ['hitesh']
 
 Option 2: Convert object entries to array of [key, value] pairs
