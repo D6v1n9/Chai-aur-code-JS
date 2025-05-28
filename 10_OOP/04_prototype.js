@@ -6,6 +6,12 @@
 // console.log(myName.trueLength());
 
 
+/*
+    function---------> Object
+    Array------------>Object    and Object ----> null         // In javascript every thing end up as Object 
+    String -----------> Object
+*/
+
 let myHeros = ["thor", "spiderman"]
 
 
