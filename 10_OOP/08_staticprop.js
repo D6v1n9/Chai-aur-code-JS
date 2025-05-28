@@ -1,3 +1,4 @@
+// prop means properties
 class User {
     constructor(username){
         this.username = username
