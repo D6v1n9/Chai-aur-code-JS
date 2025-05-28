@@ -1,6 +1,9 @@
 // get and set must be created in pair and the name of get and set be the same as that of property 
 // wanted to get and set 
 // variable with this used must be different from that of constructor
+
+//get and set using class
+
 class User {
     constructor(email, password){
         this.email = email;
