@@ -1,12 +1,11 @@
 //The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
-// #NOTE : Promise is onject and by using new we create a instanse of it 
+// #NOTE : Promise is object and by using new we create a instanse of it 
 
   // A Promise is in one of these states:
-  
-  // pending: initial state, neither fulfilled nor rejected.
-  // fulfilled: meaning that the operation was completed successfully.
-  // rejected: meaning that the operation failed.
+    // pending: initial state, neither fulfilled nor rejected.
+    // fulfilled: meaning that the operation was completed successfully.
+    // rejected: meaning that the operation failed.
 
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
