@@ -46,3 +46,17 @@ let score2 = 200
 let score3 = 300
 
 console.log(Array.of(score1, score2, score3));
+
+// Array.sort()  --> visit MDN and ask GPT to explain 
+function compare(a, b) {
+  if (a < b) return -1;
+  if (a > b) return 1;
+  return 0;
+}
+array.sort(compare);
+// What it does: Calls JavaScript’s Array.sort method on sortedData, passing a comparison 
+// function that determines the order of two elements (a and b, representing two rows/objects in the data).
+// Why: The sort method reorders the array based on the return value of the comparison function:
+// Return -1: a comes before b.
+// Return 1: b comes before a.
+// Return 0: No change in order.
